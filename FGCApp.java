@@ -31,7 +31,6 @@ public class FGCApp extends Application{
         BorderPane bPane = loader.<BorderPane>load();
         FGCController controllerRef = loader.getController();
 
-
         Scene scene = new Scene(bPane);
         primaryStage.setScene(scene);
         primaryStage.show();
