@@ -8,14 +8,28 @@ public class FGCController {
 
 	// FXML
 	@FXML
-	private Button buttonOpenFile;
+	private Button buttonSpreadsheetProperties;
+	@FXML
+	private Button buttonApplyFilter;
+	@FXML
+	private Button buttonFilterHistory;
 
 	public FGCController(Stage stage) {
 		this.primaryStage = stage;
 	}
 	
 	@FXML
-	public void openFileClicked(Event e) {
+	public void spreadsheetPropertiesClicked(Event e) {
+		System.out.println("Stub for spreadsheet properties...");
+	}
 
+	@FXML
+	public void applyFilterClicked(Event e) {
+		System.out.println("Stub for apply filter...");
+	}
+
+	@FXML
+	public void filterHistoryClicked(Event e) {
+		System.out.println("Stub for filter history...");
 	}
 }
