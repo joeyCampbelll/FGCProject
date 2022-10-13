@@ -1,6 +1,7 @@
 import javafx.event.Event;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.control.TextArea;
 import javafx.stage.Stage;
 
 public class FGCController {
@@ -13,6 +14,13 @@ public class FGCController {
 	private Button buttonApplyFilter;
 	@FXML
 	private Button buttonFilterHistory;
+	@FXML
+	private Button buttonSaveFilter;
+
+	@FXML
+	private TextArea textAreaLeft;
+	@FXML
+	private TextArea textAreaRight;
 
 	public FGCController(Stage stage) {
 		this.primaryStage = stage;
@@ -31,5 +39,10 @@ public class FGCController {
 	@FXML
 	public void filterHistoryClicked(Event e) {
 		System.out.println("Stub for filter history...");
+	}
+
+	@FXML
+	public void saveFilterClicked(Event e) {
+		System.out.println("Stub for save filter...");
 	}
 }
