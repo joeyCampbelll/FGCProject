@@ -3,12 +3,17 @@ import javafx.event.Event;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
+import javafx.scene.layout.Border;
+import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 
-public class FGCController {
+public class HomeController {
 	private Stage primaryStage;
 
 	// FXML
+	@FXML
+	private BorderPane borderPaneHome;
+
 	@FXML
 	private Button buttonSpreadsheetProperties;
 	@FXML
@@ -23,8 +28,12 @@ public class FGCController {
 	@FXML
 	private TextArea textAreaRight;
 
-	public FGCController(Stage stage) {
+	public HomeController(Stage stage) {
 		this.primaryStage = stage;
+	}
+
+	public BorderPane getBorderPaneHome() {
+		return this.borderPaneHome;
 	}
 	
 	@FXML

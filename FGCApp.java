@@ -15,6 +15,8 @@ public class FGCApp extends Application{
         launch(args);
     }
 
+	public AppController appController;
+
     @Override
     public void start(Stage primaryStage) throws Exception {
 		// FXMLLoader loader = new FXMLLoader();
