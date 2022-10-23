@@ -17,20 +17,24 @@ public class FGCApp extends Application{
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        FXMLLoader loader = new FXMLLoader();
+		// FXMLLoader loader = new FXMLLoader();
 
-        FGCController controller = new FGCController(primaryStage);
-		loader.setController(controller);
+		// FGCController controller = new FGCController(primaryStage);
+		// loader.setController(controller);
 
-        File fxmlFile = new File("FGCApp.fxml");
-        URL fxmlUrl = fxmlFile.toURI().toURL();
-        loader.setLocation(fxmlUrl);
+		// File fxmlFile = new File("FGCApp.fxml");
+		// URL fxmlUrl = fxmlFile.toURI().toURL();
+		// loader.setLocation(fxmlUrl);
 		
-        BorderPane bPane = loader.<BorderPane>load();
-        FGCController controllerRef = loader.getController();
+		// BorderPane bPane = loader.<BorderPane>load();
 
-        Scene scene = new Scene(bPane);
-        primaryStage.setScene(scene);
-        primaryStage.show();
+		// Scene scene = new Scene(bPane);
+		// primaryStage.setScene(scene);
+		// primaryStage.show();
+
+
+		FXMLLoader loader = new FXMLLoader();
+		AppController appController = new AppController(primaryStage, loader);
+		appController.buildHome();
     }
 }
