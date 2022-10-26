@@ -39,6 +39,8 @@ public class HomeController {
 	@FXML
 	public void spreadsheetPropertiesClicked(Event e) {
 		System.out.println("Stub for spreadsheet properties...");
+
+		
 	}
 
 	@FXML

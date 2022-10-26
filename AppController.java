@@ -17,7 +17,7 @@ public class AppController
 		this.loader = loader;
 		this.stage = stage;
 	}
-	
+
 	public void buildHome() throws Exception
 	{
 		HomeController homeController = new HomeController(this.stage);
